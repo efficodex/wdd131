@@ -5,5 +5,16 @@ let lastModified1 = document.querySelector("#lastModified")
 //the objects
 const today = new Date();
 let oLastModif = new Date(document.lastModified);
-year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Perú`;
-lastModified1.innerHTML += oLastModif;
+
+
+// date time dd/mm/yyyy hh:mm:ss
+const formattedDate = `${oLastModif.getDate().toString().padStart(2, '0')}/` +
+                      `${(oLastModif.getMonth() + 1).toString().padStart(2, '0')}/` +
+                      `${oLastModif.getFullYear()} ` +
+                      `${oLastModif.getHours().toString().padStart(2, '0')}:` +
+                      `${oLastModif.getMinutes().toString().padStart(2, '0')}:` +
+                      `${oLastModif.getSeconds().toString().padStart(2, '0')}`;
+
+// Output
+year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Peru`;
+lastModified1.innerHTML += `Last Modification: ${formattedDate}`;

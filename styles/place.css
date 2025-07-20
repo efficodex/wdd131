@@ -1,0 +1,51 @@
+
+
+h1{
+    background-color: #8B0000;
+    color: white;
+    margin: auto 0;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+} 
+  
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+}
+
+.label {
+    font-weight: bold;
+    width: 150px;
+    text-align: right;
+}
+
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #8B0000;
+    color: white;
+}
