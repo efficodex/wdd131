@@ -1,8 +1,11 @@
-
+:root {
+    --primary-color: #8B0000;
+    --second-color: white;
+}
 
 h1{
-    background-color: #8B0000;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--second-color);
     margin: auto 0;
     font-size: 2rem;
     text-align: center;
@@ -46,6 +49,6 @@ li{
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #8B0000;
-    color: white;
+    background-color:var(--primary-color);
+    color: var(--second-color);
 }
