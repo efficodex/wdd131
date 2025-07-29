@@ -4,4 +4,16 @@ main img{
     margin: 1rem auto;
     max-width: 100%;
     height: auto;
+    opacity: 0;
+        filter: brightness(0);
+        animation: fadeFromBlack 2s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromBlack {
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
 }
