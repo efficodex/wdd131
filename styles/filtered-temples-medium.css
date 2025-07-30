@@ -1,0 +1,7 @@
+@media (min-width: 500px) and (max-width: 829px) {
+    #templeContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

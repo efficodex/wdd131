@@ -14,3 +14,4 @@ const today = new Date();
 let oLastModif = new Date(document.lastModified);
 year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Perú`;
 lastModified1.innerHTML += oLastModif;
+
