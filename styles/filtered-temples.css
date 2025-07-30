@@ -1,6 +1,6 @@
 body {
     background-color: #f0f0f0;
-    font-family: "Montserrat", sans-serif;
+    font-family:  sans-serif;
     color: #333;
 }
 header {
@@ -14,7 +14,7 @@ header {
     padding-top: 1rem;
     text-align: center;
     font-weight: bold;
-    font-family: "Montserrat", sans-serif;
+    font-family:  sans-serif;
     width: 100%;
 }
 
@@ -83,7 +83,7 @@ main {
 }
 main h1 {
     color: #1B1F3B;
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     max-height: 40px;
     margin: auto 0;
     text-align: center;
