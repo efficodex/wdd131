@@ -104,7 +104,7 @@ function displayTemples(filteredTemples) {
     card.classList.add('temple-card');
 
     card.innerHTML = `
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy" >
       <h2>${temple.templeName}</h2>
       <p><strong>Location:</strong> ${temple.location}</p>
       <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
