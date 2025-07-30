@@ -89,8 +89,10 @@ main h1 {
     text-align: center;
 }
 
-
-
+#templeContainer {
+    min-height: 1000px;
+    
+}
 .temple-card {
     border: 1px solid #ccc;
     padding: 0;
