@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 body {
     background-color: #f0f0f0;
-    font-family:  sans-serif;
+    font-family:"Cabin", sans-serif;
     color: #000000;
 }
 header {
@@ -14,7 +16,7 @@ header {
     padding-top: 1rem;
     text-align: center;
     font-weight: bold;
-    font-family:  sans-serif;
+    font-family:"Cabin", sans-serif;
     width: 100%;
 }
 
@@ -83,7 +85,7 @@ main {
 }
 main h1 {
     color: #1B1F3B;
-    font-family: sans-serif;
+    font-family:"Cabin", sans-serif;
     max-height: 40px;
     margin: auto 0;
     text-align: center;
