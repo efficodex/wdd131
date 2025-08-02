@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santos Emprendedores - Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <style>
+        /* RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #F9F1EF;
+            color: #2F2F2F;
+            padding-bottom: 3rem;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #9E7A6B;
+            padding: 1rem 2rem;
+            color: white;
+            position: relative;
+        }
+
+        .navbar .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .nav-links li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar .nav-links li a:hover {
+            background-color: #B5C8A5;
+            color: #2F2F2F;
+            border-radius: 5px;
+        }
+
+        .menu-toggle {
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #9E7A6B;
+                flex-direction: column;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+        }
+
+        /* CONTENT CONTAINER */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 1rem;
+        }
+
+        section {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #9E7A6B;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: disc;
+            margin: 1rem auto;
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .color-box {
+            width: 120px;
+            height: 120px;
+            border: 1px solid #aaa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Santos Emprendedores</div>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="emprendimientos.html">Emprendimientos</a></li>
+            <li><a href="autosuficiencia.html">Autosuficiencia</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container">
+        <header>
+            <h1>Santos Emprendedores en Lima</h1>
+            <p>Site Plan</p>
+        </header>
+
+        <section>
+            <h2>Nombre del Sitio</h2>
+            <p><strong>Santos Emprendedores en Lima</strong> representa una plataforma que visibiliza los
+                emprendimientos de
+                miembros de La Iglesia de Jesucristo de los Santos de los Últimos Días en Lima, Perú. El nombre refuerza
+                el
+                enfoque en la comunidad local y la identidad espiritual de sus participantes.</p>
+            <p><em>Dominio sugerido:</em> santosemprendedoreslima.org</p>
+        </section>
+
+        <section>
+            <h2>Propósito del Sitio</h2>
+            <p>El propósito del sitio es brindar un espacio digital donde se promueva la autosuficiencia temporal y
+                espiritual de los miembros de La Iglesia de Jesucristo de los Santos de los Últimos Días en Lima. Se
+                busca:</p>
+            <ul>
+                <li>Explicar el concepto de autosuficiencia desde la perspectiva del evangelio.</li>
+                <li>Mostrar cómo los principios espirituales apoyan el progreso económico personal.</li>
+                <li>Visibilizar pequeños negocios y emprendimientos de miembros locales.</li>
+                <li>Fomentar redes de apoyo y conexión entre miembros emprendedores.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Escenarios</h2>
+            <ul>
+                <li>¿Dónde puedo encontrar emprendimientos de miembros Santos en Lima para apoyar con mis compras?</li>
+                <li>¿Cómo puedo registrar mi emprendimiento en esta plataforma si soy miembro de la Iglesia?</li>
+                <li>¿Qué enseña la Iglesia sobre la autosuficiencia y cómo se relaciona con los negocios personales?
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Paleta de Colores</h2>
+            <div class="colors">
+                <div class="color-box" style="background-color: #F9F1EF;">
+                    Fondo<br>#F9F1EF
+                </div>
+                <div class="color-box" style="background-color: #2F2F2F; color: white;">
+                    Texto<br>#2F2F2F
+                </div>
+                <div class="color-box" style="background-color: #9E7A6B;">
+                    Acento 1<br>#9E7A6B
+                </div>
+                <div class="color-box" style="background-color: #B5C8A5;">
+                    Acento 2<br>#B5C8A5
+                </div>
+                <div class="color-box" style="background-color: #EBD9B4;">
+                    Acento 3<br>#EBD9B4
+                </div>
+                <div class="color-box" style="background-color: #F4F6F1;">
+                    Acento 4<br>#F4F6F1
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
