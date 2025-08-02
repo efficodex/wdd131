@@ -3,13 +3,13 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: #fef8f7;
+    background-color: white;
 }
 
 header,
 main,
 footer {
-    background-color: white;
+    background-color: #F9F1EF;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 6px;
@@ -37,7 +37,7 @@ input[type="date"],
 select,
 textarea {
     padding: 0.5rem;
-    width: 100%;
+    width: 95%;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -52,5 +52,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #6b2a5d;
+    background-color: #B5C8A5;
+    color:black
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: black;
 }
