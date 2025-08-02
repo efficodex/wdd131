@@ -5,7 +5,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #F9F1EF;
+    background-color: #fef8f7;
     font-family: 'Playfair Display', serif;
     color: #2F2F2F;
 }
@@ -55,4 +55,25 @@ body {
      text-align: center;
      font-size: 0.8rem;
      flex-direction: column;
+ }
+
+ .bg-fondo {
+     background-color: #F9F1EF;
+ }
+
+ .bg-texto {
+     background-color: #2F2F2F;
+     color: white;
+ }
+
+ .bg-acento1 {
+     background-color: #9E7A6B;
+ }
+
+ .bg-acento2 {
+     background-color: #B5C8A5;
+ }
+
+ .bg-acento3 {
+     background-color: #F4F6F1;
  }
