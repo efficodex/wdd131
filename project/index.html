@@ -4,32 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santos Emprendedores - Site Plan</title>
+    <title>Santos Emprendedores</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/project.css">
-    <meta name="author" content="Alexandra Fernandez">  
+    <style>
+        :root {
+            --main-bg: #F9F1EF;
+            --dark-brown: #3B2C26;
+            --green-dark: #355E3B;
+            --green-light: #B5C8A5;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: var(--main-bg);
+            color: var(--dark-brown);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--dark-brown);
+            padding: 1rem;
+            position: relative;
+        }
+
+        .navbar img {
+            height: 40px;
+        }
+
+        .menu-toggle {
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .menu-toggle .icon::before {
+            content: "\2630";
+            /* ☰ */
+        }
+
+        .menu-toggle.active .icon::before {
+            content: "\00d7";
+            /* × */
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: var(--dark-brown);
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+            border-top: 1px solid var(--green-light);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .colors {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 0;
+        }
+
+        .color-box {
+            width: 40px;
+            height: 20px;
+        }
+
+        .c1 {
+            background-color: var(--dark-brown);
+        }
+
+        .c2 {
+            background-color: var(--green-dark);
+        }
+
+        .c3 {
+            background-color: var(--green-light);
+        }
+
+        .section {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 1rem;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .circle {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--dark-brown);
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .card {
+            border: 1px solid var(--dark-brown);
+            padding: 1rem;
+        }
+
+        .card img {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-
-
     <nav class="navbar">
         <div class="logo">
-            
-            <img src="images/logo.png" alt="Logo with the words Santos Emprendedores in bold white letters centered on a brown diamond shape, surrounded by curved text reading Creando oportunidades at the top and Juntos at the bottom, conveying a collaborative and optimistic atmosphere">
+            <img src="images/logo.png" alt="Logo Santos Emprendedores">
         </div>
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <button class="menu-toggle" aria-label="Abrir menú"><span class="icon"></span></button>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="emprendimientos.html">Emprendimientos</a></li>
-            <li><a href="autosuficiencia.html">Autosuficiencia</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Emprendimientos</a></li>
+            <li><a href="#">Autosuficiencia</a></li>
+            <li><a href="#">Contáctanos</a></li>
         </ul>
     </nav>
 
+    <div class="hero">
+        <img src="https://via.placeholder.com/300x150" alt="Imagen hero">
+    </div>
 
-    <script src="scripts/project.js" defer></script>
+    <div class="colors">
+        <div class="color-box c1"></div>
+        <div class="color-box c1"></div>
+        <div class="color-box c1"></div>
+        <div class="color-box c2"></div>
+    </div>
 
+    <div class="intro">
+        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos et vix ad putent delicata.
+        </p>
+    </div>
+
+    <div class="section carousel" id="logos-container">
+        <!-- Se llenará con JavaScript -->
+    </div>
+
+    <div class="section cards" id="cards-container">
+        <!-- Cards serán inyectadas con JavaScript -->
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+
+        const logos = [
+            'images/logo1.png',
+            'images/logo2.png',
+            'images/logo3.png',
+            'images/logo4.png'
+        ];
+
+        const cards = [
+            {
+                img: 'https://via.placeholder.com/150',
+                text: 'Emprendimiento 1 con gran impacto local.'
+            },
+            {
+                img: 'https://via.placeholder.com/150',
+                text: 'Emprendimiento 2 que genera empleo comunitario.'
+            },
+            {
+                img: 'https://via.placeholder.com/150',
+                text: 'Emprendimiento 3 con enfoque ecológico.'
+            }
+        ];
+
+        const logosContainer = document.getElementById('logos-container');
+        logos.forEach(src => {
+            const circle = document.createElement('div');
+            circle.classList.add('circle');
+            circle.style.backgroundImage = `url(${src})`;
+            logosContainer.appendChild(circle);
+        });
+
+        const cardsContainer = document.getElementById('cards-container');
+        cards.forEach(card => {
+            const div = document.createElement('div');
+            div.classList.add('card');
+            div.innerHTML = `
+        <img src="${card.img}" alt="${card.text}">
+        <p>${card.text}</p>
+      `;
+            cardsContainer.appendChild(div);
+        });
+    </script>
 </body>
 
 </html>
