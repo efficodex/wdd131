@@ -97,27 +97,14 @@
         }
 
         .colors {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
+            text-align: center;
             padding: 1rem 0;
         }
 
-        .color-box {
-            width: 40px;
-            height: 20px;
-        }
-
-        .c1 {
-            background-color: var(--dark-brown);
-        }
-
-        .c2 {
-            background-color: var(--green-dark);
-        }
-
-        .c3 {
-            background-color: var(--green-light);
+        .color-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
 
         .section {
@@ -163,6 +150,12 @@
         .card img {
             width: 100%;
         }
+
+        .card-subtitle {
+            font-weight: bold;
+            margin: 0.5rem 0;
+            color: var(--green-dark);
+        }
     </style>
 </head>
 
@@ -185,10 +178,7 @@
     </div>
 
     <div class="colors">
-        <div class="color-box c1"></div>
-        <div class="color-box c1"></div>
-        <div class="color-box c1"></div>
-        <div class="color-box c2"></div>
+        <div class="color-title">Self-reliance Principles</div>
     </div>
 
     <div class="intro">
@@ -223,14 +213,17 @@
         const cards = [
             {
                 img: 'https://via.placeholder.com/150',
+                subtitle: 'Self-reliance (Autosuficiencia)',
                 text: 'Emprendimiento 1 con gran impacto local.'
             },
             {
                 img: 'https://via.placeholder.com/150',
+                subtitle: 'Spiritual and Temporal Welfare',
                 text: 'Emprendimiento 2 que genera empleo comunitario.'
             },
             {
                 img: 'https://via.placeholder.com/150',
+                subtitle: 'Developing Talents',
                 text: 'Emprendimiento 3 con enfoque ecológico.'
             }
         ];
@@ -249,6 +242,7 @@
             div.classList.add('card');
             div.innerHTML = `
         <img src="${card.img}" alt="${card.text}">
+        <p class="card-subtitle">${card.subtitle}</p>
         <p>${card.text}</p>
       `;
             cardsContainer.appendChild(div);
