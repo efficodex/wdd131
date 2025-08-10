@@ -19,43 +19,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const emprendimientos = [
     {
-        nombre: "Manos Creativas",
-        descripcion: "Artesanías únicas hechas a mano con materiales locales.",
-        imagen: "https://via.placeholder.com/300x200", // imagen principal
-        logo: "images/logo1.png", // logo circular
+        nombre: "Alzamora Joyas",
+        descripcion: "Variedad de joyas con materiales oro y plata.",
+        imagen: "images/mirtha-joya1.jpg", // imagen principal
+        logo: "images/mirtha-joyas.jpg", // logo circular
         redes: {
-            facebook: "https://facebook.com/manoscreativas",
-            instagram: "https://instagram.com/manoscreativas"
+            facebook: "https://www.facebook.com/profile.php?id=100054317478585"
         }
     },
     {
-        nombre: "Panadería El Buen Trigo",
-        descripcion: "Pan artesanal fresco y saludable cada día.",
-        imagen: "https://via.placeholder.com/300x200",
-        logo: "images/logo2.png",
+        nombre: "DJ-Norick",
+        descripcion: "Dj fiestas privadas y empresariales.",
+        imagen: "images/dj-norick.jpg",
+        logo: "images/norick-dj.webp",
         redes: {
-            facebook: "https://facebook.com/elbuentrigo",
-            instagram: "https://instagram.com/elbuentrigo"
+            facebook: "https://www.facebook.com/profile.php?id=100066511270406"
         }
     },
     {
-        nombre: "EcoHuerto",
-        descripcion: "Productos orgánicos y huertos urbanos sostenibles.",
-        imagen: "https://via.placeholder.com/300x200",
-        logo: "images/logo3.png",
+        nombre: "Edgar Fernandez- Joyero Modelista",
+        descripcion: "Joyero artesano, joyas a pedido en oro y plata.",
+        imagen: "images/edgar-joyero.jpg",
+        logo: "images/edgar-joyas.jpg",
         redes: {
-            facebook: "https://facebook.com/ecohuerto",
-            instagram: "https://instagram.com/ecohuerto"
-        }
-    },
-    {
-        nombre: "Ropa con Propósito",
-        descripcion: "Moda sostenible hecha por mujeres emprendedoras.",
-        imagen: "https://via.placeholder.com/300x200",
-        logo: "images/logo4.png",
-        redes: {
-            facebook: "https://facebook.com/ropaconproposito",
-            instagram: "https://instagram.com/ropaconproposito"
+            facebook: "https://www.facebook.com/edgarfernandez.joyeromodelista"
         }
     }
 ];
@@ -74,6 +61,3 @@ emprendimientosAleatorios.forEach(emp => {
 });
 
 
-const year = document.querySelector("#currentYear");
-const today = new Date();
-year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Peru`;
