@@ -2,8 +2,8 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.nav-links');
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    navigation.classList.toggle('active'); // antes ponía 'open'
+    hamButton.classList.toggle('open');    // esta sí la puedes dejar para cambiar el icono
 });
 
 const emprendimientos = [
