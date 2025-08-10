@@ -28,7 +28,11 @@
 
     <main>
         <section class="hero">
-            <img src="images/hero-small.jpg" alt="Imagen principal">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-small.jpg" alt="Construction worker wearing a helmet and holding a lit torch, silhouetted against a sky with cranes in the background. The scene conveys determination and hard work in an industrial environment. No visible text in the image.">
+            </picture>
+            
             <h1>Promoviendo la autosuficiencia y el emprendimiento con fe</h1>
             <p>Descubre cómo los miembros de La Iglesia de Jesucristo de los Santos de los Últimos Días están fortaleciendo
                 hogares a través de sus negocios — con base en principios espirituales.</p>
@@ -37,6 +41,24 @@
         </section>
     
         <section class="quote">
+            <div id="quote-container">
+                <div id="quote-text">
+                    <h2>“El trabajo es una bendición del Señor. Es un medio para proveer para nosotros mismos y para los demás.”</h2>
+                    <p>— Élder Jeffrey R. Holland</p>
+                    <blockquote>
+                        “El Señor declaró: “… es mi propósito abastecer a mis santos” (D. y C.
+                        104:15). Esa revelación es una promesa del Señor de que Él le proveerá bendiciones temporales y abrirá la puerta de
+                        la autosuficiencia,
+                        la cual es la capacidad de proveernos los elementos indispensables para
+                        sostener nuestra vida y la de los miembros de nuestra familia..” – Primera Presidencia "Finanzas Personales"
+                    </blockquote>
+                </div>
+                <div id="quote-image">
+                    <img src="images/autosuficiencia-img1.jpg"
+                        alt="A person holding a shovel, symbolizing hard work and dedication. The background features a serene landscape with mountains and trees, conveying a sense of peace and purpose. No visible text in the image.">
+                </div>
+            </div>
+            
             <blockquote>
                 “La autosuficiencia es una doctrina del evangelio de Jesucristo, no un programa. Es un proceso de toda la
                 vida, no un hecho puntual.” – Élder Hugo E. Martínez
@@ -55,15 +77,10 @@
     </main>
     
     <footer>
-        <div class="footer-logo">Logo</div>
-        <div class="social">
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Instagram"></a>
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Facebook"></a>
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Twitter"></a>
-        </div>
-        <p>© 2024 Your Website. All rights reserved.</p>
+        <span id="currentYear">&#169; </span>
     </footer>
     <script src="scripts/project.js"></script>
     </body>
 
 </html>
+

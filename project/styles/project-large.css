@@ -6,7 +6,7 @@
     }
 
     .nav-links {
-        display: flex !important;
+        display: flex ;
         flex-direction: row;
         background: none;
     }
@@ -21,13 +21,57 @@
     }
 
     .hero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 2rem;
     }
 
     .cards {
         flex-direction: row;
     }
+
+    .cta {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3B2C26 ;
+    color: #F4F6F1;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+  
+}
+
+#quote-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#quote-text {
+    grid-column: 1/2;
+}
+
+#quote-img{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .quote {
+        font-style: normal;
+        text-align: left;
+        padding: 1rem;
+        border-left: 5px solid #355E3B;
+        margin: 20px;
+    }
+
+    .card {
+        flex: 1;
+        margin: 0.5rem;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 600px;
+    }
+
 }

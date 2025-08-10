@@ -72,3 +72,8 @@ emprendimientosAleatorios.forEach(emp => {
     circle.style.backgroundImage = `url(${emp.logo})`;
     logosContainer.appendChild(circle);
 });
+
+
+const year = document.querySelector("#currentYear");
+const today = new Date();
+year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Peru`;
