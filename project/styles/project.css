@@ -38,63 +38,35 @@ header {
     height: 40px;
 }
 
-/* Botón hamburguesa */
-.menu-toggle {
+#menu {
+    font-size: 1.5rem;
+    border: 0;
     background: none;
-    border: none;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    position: relative;
-}
-
-.menu-toggle .icon,
-.menu-toggle .icon::before,
-.menu-toggle .icon::after {
-    display: block;
-    background-color: #F4F6F1;
-    height: 3px;
-    width: 100%;
-    border-radius: 2px;
+    color: white;
     position: absolute;
-    transition: all 0.3s ease;
+    top: 1rem;
+    right: 1rem;
 }
 
-.menu-toggle .icon {
-    top: 50%;
-    transform: translateY(-50%);
+#menu::before {
+    content: "☰";
 }
 
-.menu-toggle .icon::before {
-    content: '';
-    top: -8px;
-}
-
-.menu-toggle .icon::after {
-    content: '';
-    top: 8px;
-}
-
-/* Estado abierto (X) */
-.menu-toggle.open .icon {
-    background: transparent;
-}
-
-.menu-toggle.open .icon::before {
-    transform: rotate(45deg);
-    top: 0;
-}
-
-.menu-toggle.open .icon::after {
-    transform: rotate(-45deg);
-    top: 0;
+#menu.open::before {
+    content: "❌";
 }
 
 /* Navegación oculta en mobile */
 .nav-links {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
     background-color: #F4F6F1;
+    border-top: 2px solid #3B2C26;
+    z-index: 999;
 }
 
 .nav-links.active {
@@ -102,15 +74,18 @@ header {
 }
 
 .nav-links li {
-    border-bottom: 1px solid #355E3B;
+    border-bottom: 2px solid #355E3B;
 }
 
 .nav-links a {
-    color: #355E3B;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
+    color: #1C1C1C;
+        text-decoration: none;
+        padding: 1rem;
+        display: block;
+        text-align: center;
+        font-weight: bold;
 }
+
 
 /* ---------------- HERO ---------------- */
 .hero {

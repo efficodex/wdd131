@@ -1,20 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.nav-links');
 
-  // Toggle menú en mobile
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuToggle.classList.toggle('open');
-  });
-
-  // Cerrar menú al hacer clic en un enlace
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      menuToggle.classList.remove('open');
-    });
-  });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
 
 const emprendimientos = [
@@ -60,4 +49,6 @@ emprendimientosAleatorios.forEach(emp => {
     logosContainer.appendChild(circle);
 });
 
-
+const year = document.querySelector("#currentYear");
+const today = new Date();
+year.innerHTML += `${today.getFullYear()} Alexandra Fernandez - Peru`;
