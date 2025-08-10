@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Emprendimiento</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo Santos Emprendedores"></a>
+            </div>
+            <button type="button" id="menu"></button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Autosuficiencia</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Registrar Emprendimiento</h1>
+        <section class="form-section">
+            <form class="emprendimiento-form">
+                <label for="dueno">Nombre y Apellidos completos</label>
+                <input type="text" id="dueno" name="dueno" required>
+
+                <label for="nombre-emprendimiento">Nombre del emprendimiento</label>
+                <input type="text" id="nombre-emprendimiento" name="nombre-emprendimiento" required>
+
+                <label for="redes">Link de redes sociales</label>
+                <input type="url" id="redes" name="redes">
+
+                <label for="descripcion">Breve descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <label>¿Es miembro de La Iglesia de Jesucristo de los Santos de los Últimos Días?</label>
+                <select id="miembro" name="miembro" required>
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <div id="datos-iglesia" style="display: none;">
+                    <label for="barrio">Barrio</label>
+                    <input type="text" id="barrio" name="barrio">
+
+                    <label for="estaca">Estaca</label>
+                    <input type="text" id="estaca" name="estaca">
+                </div>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" >
+
+                <label for="whatsapp">Número de WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9+ ]+" required>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span id="currentYear">&#169; </span>
+    </footer>
+    <script src="scripts/base.js"></script>
+    </body>

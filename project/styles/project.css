@@ -1,5 +1,6 @@
-/* ---------------- RESET ---------------- */
-* {
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,23 +9,21 @@
 body {
     background-color: #F9F1EF;
     color: #1C1C1C;
-    font-family: Arial, sans-serif;
     line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #3B2C26;
+    margin-top: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', serif;
 }
 
-/* ---------------- HEADER ---------------- */
 header {
     background-color: #3B2C26;
-    /* mismo color que footer */
 }
 
 .navbar {
@@ -56,7 +55,6 @@ header {
     content: "❌";
 }
 
-/* Navegación oculta en mobile */
 .nav-links {
     display: none;
     flex-direction: column;
@@ -86,8 +84,16 @@ header {
         font-weight: bold;
 }
 
+footer {
+    background-color: #3B2C26;
+    color: #F4F6F1;
+    text-align: center;
+    padding: 1rem;
+}
 
-/* ---------------- HERO ---------------- */
+
+
+
 .hero {
     text-align: center;
     padding: 1rem;
@@ -122,26 +128,19 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    /* espacio entre círculos */
     margin: 1rem 0;
 }
 
 .circle {
     width: 150px;
-    /* tamaño del círculo */
     height: 150px;
     border-radius: 50%;
-    /* redondea al máximo */
     background-size: cover;
-    /* cubre todo el círculo */
     background-position: center;
-    /* centra la imagen */
     background-repeat: no-repeat;
     border: 2px solid #3B2C26;
-    /* borde opcional */
 }
 
-/* ---------------- QUOTE ---------------- */
 .quote {
     background-color: #F4F6F1;
     padding: 1rem;
@@ -164,7 +163,7 @@ header {
     border-radius: 8px;
 }
 
-/* ---------------- CTA ---------------- */
+
 .cta {
     text-align: center;
     padding: 1rem;
@@ -177,15 +176,55 @@ header {
 #quote-container {
     display: none;
 }
-/* ---------------- FOOTER ---------------- */
-footer {
-    background-color: #3B2C26;
-    /* igual que header */
-    color: #F4F6F1;
-    text-align: center;
+
+/* emprendimientos.html*/
+
+/* Contenedor de tarjetas */
+#lista-emprendimientos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding: 1rem;
 }
 
-footer .social a img {
-    margin: 0 5px;
+/* Tarjeta */
+.card-emprendimiento {
+    background-color: #F4F6F1;
+    border: 2px solid #3B2C26;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Imagen principal */
+.card-emprendimiento img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenido */
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    margin-bottom: 0.5rem;
+}
+
+.card-content a {
+    color: #355E3B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
