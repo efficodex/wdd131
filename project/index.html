@@ -5,249 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santos Emprendedores</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --main-bg: #F9F1EF;
-            --dark-brown: #3B2C26;
-            --green-dark: #355E3B;
-            --green-light: #B5C8A5;
-            --white: #ffffff;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: var(--main-bg);
-            color: var(--dark-brown);
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: var(--dark-brown);
-            padding: 1rem;
-            position: relative;
-        }
-
-        .navbar img {
-            height: 40px;
-        }
-
-        .menu-toggle {
-            font-size: 1.8rem;
-            background: none;
-            border: none;
-            color: var(--white);
-            cursor: pointer;
-            z-index: 2;
-        }
-
-        .menu-toggle .icon::before {
-            content: "\2630";
-            /* ☰ */
-        }
-
-        .menu-toggle.active .icon::before {
-            content: "\00d7";
-            /* × */
-        }
-
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            background-color: var(--dark-brown);
-            width: 100%;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            z-index: 1;
-        }
-
-        .nav-links.active {
-            display: flex;
-        }
-
-        .nav-links li {
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            display: block;
-            padding: 1rem;
-            border-top: 1px solid var(--green-light);
-        }
-
-        .hero {
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .hero img {
-            width: 90%;
-            max-width: 300px;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .colors {
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        .color-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .section {
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .carousel {
-            display: flex;
-            gap: 1rem;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            padding: 1rem;
-        }
-
-        .carousel::-webkit-scrollbar {
-            display: none;
-        }
-
-        .circle {
-            flex: 0 0 auto;
-            scroll-snap-align: center;
-            width: 60px;
-            height: 60px;
-            border: 2px solid var(--dark-brown);
-            border-radius: 50%;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .cards {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding: 1rem;
-        }
-
-        .card {
-            border: 1px solid var(--dark-brown);
-            padding: 1rem;
-        }
-
-        .card img {
-            width: 100%;
-        }
-
-        .card-subtitle {
-            font-weight: bold;
-            margin: 0.5rem 0;
-            color: var(--green-dark);
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo Santos Emprendedores">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Santos Emprendedores">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú"><span class="icon"></span></button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Autosuficiencia</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-small.jpg" alt="Imagen principal">
+            <h1>Promoviendo la autosuficiencia y el emprendimiento con fe</h1>
+            <p>Descubre cómo los miembros de La Iglesia de Jesucristo de los Santos de los Últimos Días están fortaleciendo
+                hogares a través de sus negocios — con base en principios espirituales.</p>
+            <div id="logos-container" class="logos"></div>
+            <a href="#" class="btn">Conoce los emprendimientos</a>
+        </section>
+    
+        <section class="quote">
+            <blockquote>
+                “La autosuficiencia es una doctrina del evangelio de Jesucristo, no un programa. Es un proceso de toda la
+                vida, no un hecho puntual.” – Élder Hugo E. Martínez
+            </blockquote>
+            <div id="cards-container" class="cards"></div>
+            <a href="#" class="btn">Aprende más sobre autosuficiencia</a>
+        </section>
+    
+        <section class="cta">
+            <blockquote>
+                “Si tus metas son justas, lucha por alcanzarlas.” – M. Russell Ballard
+            </blockquote>
+            <p>Llena el formulario y registra tu emprendimiento:</p>
+            <a href="#" class="btn">Regístrate aquí</a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logo">Logo</div>
+        <div class="social">
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Instagram"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Twitter"></a>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menú"><span class="icon"></span></button>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Emprendimientos</a></li>
-            <li><a href="#">Autosuficiencia</a></li>
-            <li><a href="#">Contáctanos</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <img src="https://via.placeholder.com/300x150" alt="Imagen hero">
-    </div>
-
-    <div class="colors">
-        <div class="color-title">Self-reliance Principles</div>
-    </div>
-
-    <div class="intro">
-        <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos et vix ad putent delicata.
-        </p>
-    </div>
-
-    <div class="section carousel" id="logos-container">
-        <!-- Se llenará con JavaScript -->
-    </div>
-
-    <div class="section cards" id="cards-container">
-        <!-- Cards serán inyectadas con JavaScript -->
-    </div>
-
-    <script>
-        const toggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            toggle.classList.toggle('active');
-        });
-
-        const logos = [
-            'images/logo1.png',
-            'images/logo2.png',
-            'images/logo3.png',
-            'images/logo4.png'
-        ];
-
-        const cards = [
-            {
-                img: 'https://via.placeholder.com/150',
-                subtitle: 'Self-reliance (Autosuficiencia)',
-                text: 'Emprendimiento 1 con gran impacto local.'
-            },
-            {
-                img: 'https://via.placeholder.com/150',
-                subtitle: 'Spiritual and Temporal Welfare',
-                text: 'Emprendimiento 2 que genera empleo comunitario.'
-            },
-            {
-                img: 'https://via.placeholder.com/150',
-                subtitle: 'Developing Talents',
-                text: 'Emprendimiento 3 con enfoque ecológico.'
-            }
-        ];
-
-        const logosContainer = document.getElementById('logos-container');
-        logos.forEach(src => {
-            const circle = document.createElement('div');
-            circle.classList.add('circle');
-            circle.style.backgroundImage = `url(${src})`;
-            logosContainer.appendChild(circle);
-        });
-
-        const cardsContainer = document.getElementById('cards-container');
-        cards.forEach(card => {
-            const div = document.createElement('div');
-            div.classList.add('card');
-            div.innerHTML = `
-        <img src="${card.img}" alt="${card.text}">
-        <p class="card-subtitle">${card.subtitle}</p>
-        <p>${card.text}</p>
-      `;
-            cardsContainer.appendChild(div);
-        });
-    </script>
-</body>
+        <p>© 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <script src="scripts/project.js"></script>
+    </body>
 
 </html>
