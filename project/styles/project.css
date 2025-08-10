@@ -1,4 +1,4 @@
-
+/* ---------------- RESET ---------------- */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +24,7 @@ h6 {
 /* ---------------- HEADER ---------------- */
 header {
     background-color: #3B2C26;
+    /* mismo color que footer */
 }
 
 .navbar {
@@ -37,7 +38,7 @@ header {
     height: 40px;
 }
 
-
+/* Botón hamburguesa */
 .menu-toggle {
     background: none;
     border: none;
@@ -74,7 +75,7 @@ header {
     top: 8px;
 }
 
-
+/* Estado abierto (X) */
 .menu-toggle.open .icon {
     background: transparent;
 }
@@ -89,7 +90,7 @@ header {
     top: 0;
 }
 
-
+/* Navegación oculta en mobile */
 .nav-links {
     display: none;
     flex-direction: column;
@@ -111,6 +112,7 @@ header {
     display: block;
 }
 
+/* ---------------- HERO ---------------- */
 .hero {
     text-align: center;
     padding: 1rem;
@@ -123,4 +125,61 @@ header {
 
 .hero h1 {
     font-size: 1.25rem;
-    margin: 1r
+    margin: 1rem 0;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #355E3B;
+    color: #F4F6F1;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* ---------------- QUOTE ---------------- */
+.quote {
+    background-color: #F4F6F1;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* ---------------- CTA ---------------- */
+.cta {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3B2C26;
+    color: #F4F6F1;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background-color: #3B2C26;
+    /* igual que header */
+    color: #F4F6F1;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social a img {
+    margin: 0 5px;
+}
