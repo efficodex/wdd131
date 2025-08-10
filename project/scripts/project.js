@@ -1,10 +1,21 @@
-const toggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-        toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            toggle.classList.toggle('active');
-        });
+  // Toggle menú en mobile
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+
+  // Cerrar menú al hacer clic en un enlace
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('open');
+    });
+  });
+});
 
 const emprendimientos = [
     {

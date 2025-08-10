@@ -1,24 +1,33 @@
-@media(min-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+@media (min-width: 768px) {
 
+    /* Menú horizontal */
     .menu-toggle {
         display: none;
     }
 
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+    }
+
+    .nav-links li {
+        border: none;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 1rem;
+        color: #F4F6F1;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
     .cards {
         flex-direction: row;
-        justify-content: center;
-    }
-
-    .card {
-        max-width: 250px;
-    }
-
-    .logos {
-        gap: 20px;
     }
 }
