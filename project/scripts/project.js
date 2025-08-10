@@ -28,8 +28,8 @@ const emprendimientos = [
     {
         nombre: "Edgar Fernandez- Joyero Modelista",
         descripcion: "Joyero artesano, joyas a pedido en oro y plata.",
-        imagen: "images/edgar-joyero.jpg",
-        logo: "images/edgar-joyas.jpg",
+        imagen: "images/edgar-joyas.jpg",
+        logo: "images/edgar-joyero.jpg",
         redes: {
             facebook: "https://www.facebook.com/edgarfernandez.joyeromodelista"
         }

@@ -115,6 +115,31 @@ header {
     border-radius: 5px;
     text-decoration: none;
 }
+.btn:hover {
+    background-color: #2A4B2A;
+}
+#logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* espacio entre círculos */
+    margin: 1rem 0;
+}
+
+.circle {
+    width: 150px;
+    /* tamaño del círculo */
+    height: 150px;
+    border-radius: 50%;
+    /* redondea al máximo */
+    background-size: cover;
+    /* cubre todo el círculo */
+    background-position: center;
+    /* centra la imagen */
+    background-repeat: no-repeat;
+    border: 2px solid #3B2C26;
+    /* borde opcional */
+}
 
 /* ---------------- QUOTE ---------------- */
 .quote {

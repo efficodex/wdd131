@@ -1,14 +1,20 @@
 @media (min-width: 768px) {
 
-    /* Menú horizontal */
-    .menu-toggle {
+    /* Ocultar botón hamburguesa */
+    #menu {
         display: none;
     }
 
+    /* Menú horizontal a la derecha */
     .nav-links {
-        display: flex ;
+        display: flex;
         flex-direction: row;
         background: none;
+        position: static;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .nav-links li {
@@ -29,32 +35,31 @@
     }
 
     .cta {
-    text-align: center;
-    padding: 1rem;
-    background-color: #3B2C26 ;
-    color: #F4F6F1;
-    margin: 20px auto;
-    border-radius: 8px;
-    width: 80%;
-  
-}
+        text-align: center;
+        padding: 1rem;
+        background-color: #3B2C26;
+        color: #F4F6F1;
+        margin: 20px auto;
+        border-radius: 8px;
+        width: 80%;
+    }
 
-#quote-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
+    #quote-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 
-#quote-text {
-    grid-column: 1/2;
-}
+    #quote-text {
+        grid-column: 1/2;
+    }
 
-#quote-img{
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #quote-img {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .quote {
         font-style: normal;
@@ -74,4 +79,10 @@
         max-width: 600px;
     }
 
+    #btn-learnmore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
 }
