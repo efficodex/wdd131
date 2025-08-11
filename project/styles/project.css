@@ -228,3 +228,45 @@ footer {
     text-decoration: underline;
 }
 
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.info-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    padding: 10px 0;
+}
+
+.resources {
+    margin-top: 40px;
+}
+
+.resources h2 {
+    margin-bottom: 10px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 8px;
+}
+
+.resources a {
+    color: #2a4d3b;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}

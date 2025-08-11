@@ -97,4 +97,33 @@
         height: auto;
         border-radius: 8px;
     }
+
+        .info-block {
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .info-block.reverse {
+            flex-direction: row-reverse;
+        }
+    
+        .info-block img {
+            width: 30%;
+            padding: 25px;
+        }
+    
+        .text {
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .auto-img{
+            border-radius: 15px;
+        }
+
+        #autosuficiencia {
+            padding: 50px;
+            background-color: #F4F6F1;
+        }
 }
