@@ -7,7 +7,7 @@ emprendimientos.forEach(emp => {
     card.classList.add('card-emprendimiento');
 
     card.innerHTML = `
-        <img src="${emp.imagen}" alt="${emp.nombre}">
+        <img src="${emp.imagen}" alt="${emp.nombre}" loading="lazy">
         <div class="card-content">
             <h2>${emp.nombre}</h2>
             <p>${emp.descripcion}</p>
